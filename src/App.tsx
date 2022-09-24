@@ -1,9 +1,11 @@
 import './App.css';
+import AirbnbCard from './Template';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-3xl">Test </h1>
+    // create a div in the middle of the screen with tailwind
+    <div className='flex items-center justify-center h-screen'>
+      <AirbnbCard />
     </div>
   );
 }
