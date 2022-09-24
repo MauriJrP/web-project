@@ -7,7 +7,7 @@ export default function AirbnbCard() {
       imageAlt: 'Rear view of modern home with pool',
       beds: 3,
       baths: 2,
-      title: 'Casa moderna en el centro de la ciudad en el corazón de Los Ángeles histórico',
+      title: 'Esto es una prueba',
       formattedPrice: '$1,900.00',
       reviewCount: 34,
       rating: 4,
