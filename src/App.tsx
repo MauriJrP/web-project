@@ -1,10 +1,16 @@
-import AirbnbCard from './components/AirbnbCard';
+import {BrowserRouter as Router, Navigate, Route, Routes} from 'react-router-dom';
+import Home from './pages/HomePage/Home';
+import Products from './pages/ProductsPage/Products';
 
 export default function App() {
   return (
-    // create a div in the middle of the screen with tailwind
-    <div className='flex items-center justify-center h-screen'>
-      <AirbnbCard />
-    </div>
-  );
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/web-project" element={<Navigate to="/home" />} />
+        <Route path="/home" element={<Home/>} />
+        <Route path="/products" element={<Products/>} />
+      </Routes>
+    </Router>
+  )
 }
