@@ -1,7 +1,6 @@
-import './App.css';
-import AirbnbCard from './Template';
+import AirbnbCard from './components/AirbnbCard';
 
-function App() {
+export default function App() {
   return (
     // create a div in the middle of the screen with tailwind
     <div className='flex items-center justify-center h-screen'>
@@ -9,5 +8,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
