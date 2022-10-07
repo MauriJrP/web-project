@@ -10,6 +10,7 @@ export default function App() {
         <Route path="/web-project" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home/>} />
         <Route path="/products" element={<Products/>} />
+        {/* <Route path="/support" element={<Support/>} /> */}
       </Routes>
     </Router>
   )
