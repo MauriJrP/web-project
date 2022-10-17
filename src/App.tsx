@@ -1,5 +1,7 @@
 import {BrowserRouter as Router, Navigate, Route, Routes} from 'react-router-dom';
+import CreateAccount from './pages/Createanaccountpage/CreateAccount';
 import Home from './pages/HomePage/Home';
+import Login from './pages/Loginpage/Login';
 import Products from './pages/ProductsPage/Products';
 
 export default function App() {
@@ -10,7 +12,8 @@ export default function App() {
         <Route path="/web-project" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home/>} />
         <Route path="/products" element={<Products/>} />
-        {/* <Route path="/support" element={<Support/>} /> */}
+        <Route path="/login" element={<Login/>} />
+        <Route path="/createAccount" element={<CreateAccount/>} />
       </Routes>
     </Router>
   )
