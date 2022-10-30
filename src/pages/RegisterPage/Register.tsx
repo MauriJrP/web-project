@@ -1,6 +1,6 @@
 import loginIMG from "../../assets/login.jpg";
 
-export default function CreateAccount() {
+export default function Register() {
   return (
     <> 
     <div className="relative w-full h-screen bg-zinc-900/90">
@@ -13,6 +13,10 @@ export default function CreateAccount() {
 
           <div className="relative flex flex-col py-1">
             <label>Nombre de usuario</label>
+            <input className="border relative bg-gray-100 p-1" type="text" />
+          </div>
+          <div className="relative flex flex-col py-1">
+            <label>Apellido</label>
             <input className="border relative bg-gray-100 p-1" type="text" />
           </div>
           <div className="relative flex flex-col py-1">
