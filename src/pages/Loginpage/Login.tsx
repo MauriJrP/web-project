@@ -47,7 +47,7 @@ export default function Login() {
           <Flex overflow='hidden' w='full' bg={'damian'}>
             <Center p='8' w='full' borderRadius='3xl'>
               <Box maxW='800px' w={'400px'} borderWidth='1px' borderRadius='lg' overflow='hidden' p={'4'} bg={'gray.600'}>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="max-w-[400px] w-full mx-auto bg-white p-4">
               <h2 className="text-4xl font-bold text-center py-4">TechStore.</h2>
               <div className="flex flex-col py-2">
                 <FormControl isRequired>
@@ -70,6 +70,7 @@ export default function Login() {
                     onChange={handleInputChange}
                     placeholder="Contraseña"
                     size="sm"
+                    type="password"
                     />
                 </FormControl>
               </div>

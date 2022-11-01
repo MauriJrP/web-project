@@ -58,11 +58,14 @@ export const AuthProvider = ({children}: IProps) => {
       const body = {...newUser}
 
       // console.log(await axios.post(url,body,config));
-      const data = await (await axios.post(url, body, config)).data[0];
+      const response = await axios.post(url, body, config);
+      const data = response.data;
+      console.log(data);
+
       return data.message;
       
     } catch (err: any) {
-      return(err.response.data[0].message);
+      return err.response.data.message;
     }
   }
 
